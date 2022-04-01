@@ -166,7 +166,7 @@ section .signin-container .signup .img-box {
     font-weight: 600;
     color: var(--white-color);
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -205,17 +205,23 @@ section .signin-container .signup .img-box {
 }
 
 .main .pages .header {
-    width: 100%;
+    top: 0;
+    width: 98%;
     height: 80px;
-    background: var(--grey-color);
+    background: var(--primary-color);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
 
 .main .pages .header h2 {
     text-align: center;
     color: var(--white-color);
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 80px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .main .home-content .content {
@@ -224,44 +230,43 @@ section .signin-container .signup .img-box {
     margin-right: 20px;
 }
 
-.main .home-content .content .row {
-    padding-left: 50px;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
 .main .home-content .content .row .coulmn {
-    width: 100%;
-    float: left;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
 }
 
 .main .home-content .content .row .coulmn .c-items {
+    width: 220px;
+    height: 80px;
+    background: #f1f1f1;
     display: inline-block;
-    margin-right: 100px;
-    padding: 30px 0;
+    margin-right: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 .main .home-content .content .row .coulmn .c-items h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Ubuntu";
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: var(--primary-color);
     text-transform: uppercase;
 }
 
-.main .home-content .content .row .coulmn .c-items p {
-    margin-top: 20px;
-}
-
 .main .home-content .content .row .coulmn .c-items .c-values {
     font-size: 20px;
-    color: var(--grey-color);
+    color: var(--black-color);
+    opacity: 0.8;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 
@@ -271,31 +276,40 @@ section .signin-container .signup .img-box {
 
 */
 
-.patients-content .patients .patients-operation {
+.patients-content .patients .patients-operation,
+.s-header,
+.w-header {
     width: 100%;
     height: 80px;
+    max-height: 200px;
     position: relative;
     border-bottom: 2px solid var(--grey-color);
 }
 
-.patients-content .patients .patients-operation .items ul {
+.patients-content .patients .patients-operation .items ul,
+.s-header .items ul,
+.w-header .items ul {
     list-style: none;
     margin-top: 10px;
 }
 
-.patients-content .patients .patients-operation .items ul li {
+.patients-content .patients .patients-operation .items ul li,
+.s-header .items ul li,
+.w-header .items ul li {
     display: inline-block;
     padding: 0 20px;
     margin-left: 50px;
 }
 
-.patients-content .patients .patients-operation .items ul li button {
+.patients-content .patients .patients-operation .items ul li button,
+.s-header .items ul li button,
+.w-header .items ul li button {
     background-color: var(--primary-color);
     border: none;
     color: var(--white-color);
     padding: 10px 25px;
     text-align: center;
-    font-family: "Ubuntu";
+    font-family: "Poppins";
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
@@ -303,4 +317,192 @@ section .signin-container .signup .img-box {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 2px;
+    letter-spacing: 1.5px;
+}
+
+
+/*   
+           Table Patient
+*/
+
+.fixed_header {
+    width: 90%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fixed_header tbody {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    height: 10%;
+}
+
+.fixed_header thead tr {
+    display: block;
+}
+
+.fixed_header thead {
+    background: black;
+    color: #fff;
+}
+
+.fixed_header th,
+.fixed_header td {
+    padding: 5px;
+    text-align: left;
+    width: 200px;
+    border: 1px solid var(--grey-color);
+    border-bottom: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.table-position {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.update .fixed_header tbody,
+.delete .fixed_header tbody,
+.s-b2 .fixed_header tbody,
+.s-b3 .fixed_header tbody,
+.w-b2 .fixed_header tbody,
+.w-b3 .fixed_header tbody {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    height: 100px;
+}
+
+
+/*            Patient add new     */
+
+.p-add-new {
+    width: 250px;
+    height: 80px;
+}
+
+.list-style {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.list-style ul {
+    list-style: none;
+}
+
+.list-style ul li {
+    margin-right: 5%;
+    margin-bottom: 2%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+input[type=text],
+select {
+    width: 80%;
+    padding: 8px 14px;
+    margin: 2px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Ubuntu";
+    letter-spacing: 1px;
+}
+
+input[type=text]:focus {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+label {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.add-new button,
+.update button,
+.delete button,
+.s-b2 button,
+.s-b3 button,
+.w-b3 button,
+.w-b2 button {
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    color: var(--white-color);
+    background: var(--primary-color);
+    float: right;
+    margin-right: 10%;
+    border: 1px solid var(--grey-color);
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins";
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.selected {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/*
+
+        Patient update data
+*/
+
+.pu-data {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.pu-data .data {
+    width: 250px;
+    height: 80px;
+}
+
+
+/* 
+        Log Out
+*/
+
+.l-content h1 {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.l-content button {
+    width: 200px;
+    height: 80px;
+    color: var(--white-color);
+    background: var(--primary-color);
+    border: none;
+    font-family: "Ubuntu";
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 10px;
 }
