@@ -1,6 +1,5 @@
 # COVID Care Center Management System
 
-[![Owner Avatar](<owner_avatar_url>)](https://github.com/Fizan324926/covid-care-center)
 
 ## Overview
 
